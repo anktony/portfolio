@@ -37,8 +37,14 @@ body {
   
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
+  }
+
+  @media (max-width: 600px){
+    nav{
+      justify-content: center;
+    }
   }
   
   nav ul {
@@ -76,7 +82,7 @@ body {
     padding: 20px;
   }
 
-  #about p {
+  #about-me-text{
     text-align: justify;
   }
  
