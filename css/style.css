@@ -75,7 +75,11 @@ body {
   main {
     padding: 20px;
   }
-  
+
+  #about p {
+    text-align: justify;
+  }
+ 
   section {
     margin-bottom: 40px;
   }
@@ -115,24 +119,36 @@ body {
   
   /* Contact form styles */
   form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    /* grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; */
   }
   
-  form label {
-    display: block;
+  form div label {
+    display: inline;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 25px;
   }
   
-  form input, form textarea {
+  form div input, form div textarea {
     border: 2px solid #ddd;
     border-radius: 5px;
     padding: 10px;
+    margin: 10px;
     font-size: 16px;
     width: 100%;
+
   }
+
+  .form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   
   form input:focus, form textarea:focus {
     outline: none;
